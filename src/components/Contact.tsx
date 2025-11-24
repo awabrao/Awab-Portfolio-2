@@ -19,7 +19,9 @@ export function Contact() {
     e.preventDefault();
     // Handle form submission
     console.log("Form submitted:", formData);
-    alert("Thank you for your message! I'll get back to you soon.");
+    alert(
+      "Thank you for your message! I'll get back to you soon.",
+    );
     setFormData({ name: "", email: "", message: "" });
   };
 
@@ -27,19 +29,19 @@ export function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@alexthompson.dev",
-      href: "mailto:hello@alexthompson.dev",
+      value: "mawabrao5@gmail.com",
+      href: "mailto:mawabrao5@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+92 300 7118146",
+      href: "tel:+923007118146",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Darya Khan, Bhakkar, Punjab, Pakistan",
       href: null,
     },
   ];
@@ -50,32 +52,48 @@ export function Contact() {
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          animate={
+            isInView
+              ? { opacity: 1, y: 0 }
+              : { opacity: 0, y: 50 }
+          }
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
           <h2 className="mb-4 text-slate-900">Get In Touch</h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            Have a project in mind or want to collaborate? Feel free to reach
-            out. I'm always open to discussing new opportunities.
+            Have a project in mind or want to collaborate? Feel
+            free to reach out. I'm always open to discussing new
+            opportunities.
           </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+            animate={
+              isInView
+                ? { opacity: 1, x: 0 }
+                : { opacity: 0, x: -50 }
+            }
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="mb-6 text-slate-900">Contact Information</h3>
+            <h3 className="mb-6 text-slate-900">
+              Contact Information
+            </h3>
             <div className="space-y-6">
               {contactInfo.map((info) => (
-                <div key={info.label} className="flex items-start gap-4">
+                <div
+                  key={info.label}
+                  className="flex items-start gap-4"
+                >
                   <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <info.icon className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p className="text-slate-500 mb-1">{info.label}</p>
+                    <p className="text-slate-500 mb-1">
+                      {info.label}
+                    </p>
                     {info.href ? (
                       <a
                         href={info.href}
@@ -84,7 +102,9 @@ export function Contact() {
                         {info.value}
                       </a>
                     ) : (
-                      <p className="text-slate-900">{info.value}</p>
+                      <p className="text-slate-900">
+                        {info.value}
+                      </p>
                     )}
                   </div>
                 </div>
@@ -94,12 +114,19 @@ export function Contact() {
 
           <motion.div
             initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+            animate={
+              isInView
+                ? { opacity: 1, x: 0 }
+                : { opacity: 0, x: 50 }
+            }
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-slate-700 mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-slate-700 mb-2"
+                >
                   Name
                 </label>
                 <Input
@@ -107,7 +134,10 @@ export function Contact() {
                   type="text"
                   value={formData.name}
                   onChange={(e) =>
-                    setFormData({ ...formData, name: e.target.value })
+                    setFormData({
+                      ...formData,
+                      name: e.target.value,
+                    })
                   }
                   placeholder="Your name"
                   required
@@ -115,7 +145,10 @@ export function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-slate-700 mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-slate-700 mb-2"
+                >
                   Email
                 </label>
                 <Input
@@ -123,7 +156,10 @@ export function Contact() {
                   type="email"
                   value={formData.email}
                   onChange={(e) =>
-                    setFormData({ ...formData, email: e.target.value })
+                    setFormData({
+                      ...formData,
+                      email: e.target.value,
+                    })
                   }
                   placeholder="your.email@example.com"
                   required
@@ -131,14 +167,20 @@ export function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-slate-700 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-slate-700 mb-2"
+                >
                   Message
                 </label>
                 <Textarea
                   id="message"
                   value={formData.message}
                   onChange={(e) =>
-                    setFormData({ ...formData, message: e.target.value })
+                    setFormData({
+                      ...formData,
+                      message: e.target.value,
+                    })
                   }
                   placeholder="Tell me about your project..."
                   required

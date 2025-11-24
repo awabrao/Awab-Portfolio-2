@@ -15,7 +15,7 @@ export function Projects() {
       description:
         "A modern e-commerce solution with real-time inventory management and seamless checkout experience.",
       image: "https://images.unsplash.com/photo-1669062897193-f8a4215c2033?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWJzaXRlJTIwZGVzaWdufGVufDF8fHx8MTc2Mzk0ODI0MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      tags: ["React", "Node.js", "PostgreSQL"],
+      tags: ["React", "Laravel", "MySQL"],
       github: "https://github.com",
       demo: "https://example.com",
     },
@@ -24,7 +24,7 @@ export function Projects() {
       description:
         "Mobile-first fitness application with workout tracking, progress analytics, and social features.",
       image: "https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzYzODkwNjAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      tags: ["React Native", "TypeScript", "Firebase"],
+      tags: ["React", "Laravel", "MySQL"],
       github: "https://github.com",
       demo: "https://example.com",
     },
@@ -33,7 +33,7 @@ export function Projects() {
       description:
         "Real-time analytics dashboard with interactive charts and customizable widgets for data visualization.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MXx8fHwxNzYzOTE3MTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      tags: ["Vue.js", "D3.js", "Express"],
+      tags: ["Vue.js", "Laravel", "MySQL"],
       github: "https://github.com",
       demo: "https://example.com",
     },
