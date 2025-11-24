@@ -185,7 +185,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.9 }}
           >
             <motion.a
-              href="https://github.com/awabrao?tab=repositories"
+              href="https://www.linkedin.com/in/awabrao/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-600 transition-colors"
