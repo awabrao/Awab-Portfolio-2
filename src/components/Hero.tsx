@@ -185,7 +185,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.9 }}
           >
             <motion.a
-              href="https://www.linkedin.com/in/awabrao/"
+              href="https://github.com/awabrao?tab=repositoriesawabrao"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-600 transition-colors"
@@ -195,7 +195,7 @@ export function Hero() {
               <Github className="w-6 h-6" />
             </motion.a>
             <motion.a
-              href="https://www.linkedin.com/in/awab-rao-409484200/"
+              href="https://www.linkedin.com/in/awabrao/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-600 transition-colors"
